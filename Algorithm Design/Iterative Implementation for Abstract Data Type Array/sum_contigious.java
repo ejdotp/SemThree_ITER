@@ -1,4 +1,4 @@
-//Finding the Largest Sum Contigious Number?
+//Finding the Largest Sum Contigious Number
 
 public class sum_contigious
 {
