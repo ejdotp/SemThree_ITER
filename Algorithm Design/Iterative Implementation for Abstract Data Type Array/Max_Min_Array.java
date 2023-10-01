@@ -1,4 +1,4 @@
-//convert array to alternating maximum minimum array?
+//convert array to alternating maximum minimum array
 
 import java.util.Arrays;
 
