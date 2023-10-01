@@ -1,4 +1,6 @@
-public class MaxMin
+//to find maximum and minimum element in an array
+
+public class Find_MaxMin
 {
 
 	public static void main(String[] args)
