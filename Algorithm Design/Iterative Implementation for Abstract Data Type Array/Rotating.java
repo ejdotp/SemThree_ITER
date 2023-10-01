@@ -1,3 +1,5 @@
+//roating array at the nth position
+
 public class Rotating
 {
 
