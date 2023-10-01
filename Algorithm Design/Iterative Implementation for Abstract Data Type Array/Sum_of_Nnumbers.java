@@ -1,3 +1,5 @@
+//to find sum of n natural numbers
+
 import java.util.*;
 
 public class Sum_of_Nnumbers
