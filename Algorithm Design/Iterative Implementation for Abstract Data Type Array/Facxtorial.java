@@ -1,3 +1,5 @@
+//Finding factorial of n
+
 import java.util.*;
 
 public class Facxtorial
