@@ -20,3 +20,8 @@ public class Facxtorial
 	}
 
 }
+
+/*Output:
+Enter the number to find it's factorial: 12 
+Factorial is: 479001600
+*/
