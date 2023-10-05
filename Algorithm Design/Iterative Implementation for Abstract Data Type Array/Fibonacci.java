@@ -30,3 +30,9 @@ public class Fibonacci
 	}
 
 }
+
+/*Output:
+Enter nth number: 8
+Answer is: 
+21
+*/
