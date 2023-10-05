@@ -24,3 +24,7 @@ public class sum_contiguous
 	}
 
 }
+
+/*Output:
+The largest sum contiguous subarray is: 6
+*/
