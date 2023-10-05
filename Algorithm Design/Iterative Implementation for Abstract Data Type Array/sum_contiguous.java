@@ -5,7 +5,7 @@ public class sum_contiguous
 
 	public static void main(String[] args)
 	{
-		int[] Arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+	int[] Arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         int max = Integer.MIN_VALUE;
         int total = 0;
 
