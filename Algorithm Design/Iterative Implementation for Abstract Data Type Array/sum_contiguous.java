@@ -1,6 +1,6 @@
-//Finding the Largest Sum Contigious Number
+//Finding the Largest Sum Contiguous Number
 
-public class sum_contigious
+public class sum_contiguous 
 {
 
 	public static void main(String[] args)
