@@ -20,3 +20,8 @@ public class Sum_of_Nnumbers
 	}
 
 }
+
+/*Output:
+Enter the value of n: 100
+Sum of n-numbers is: 5050
+*/
