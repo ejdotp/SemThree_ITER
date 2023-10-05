@@ -23,3 +23,7 @@ public class Find_MaxMin
 	}
 
 }
+
+/*Output:
+Max element is: 2400 & Min element is: 1
+	*/
