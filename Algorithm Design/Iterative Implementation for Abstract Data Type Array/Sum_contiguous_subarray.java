@@ -3,7 +3,7 @@ class Sum_contiguous_subarray
 {
     public static void main(String[] args)
     {
-        int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
+        int a[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4};
         int n = a.length;
         int sum = 0, max = 0, start = 0, end = 0, s = 0;
  
@@ -34,6 +34,6 @@ class Sum_contiguous_subarray
 
 /*
 Output:
-Largest Contiguous Subarray: [ 4 -1 -2 1 5 ]
-Maximum contiguous sum is 7
+Largest Contiguous Subarray: [ 4 -1 2 1 ]
+Maximum contiguous sum is 6
 */
