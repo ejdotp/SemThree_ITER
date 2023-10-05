@@ -23,3 +23,7 @@ public class Max_Min_Array
         System.out.println(Arrays.toString(result));
     }
 }
+
+/*Output:
+[7, 1, 6, 2, 5, 3, 4]
+*/
