@@ -31,3 +31,7 @@ public class Small_Missing
     }
 
 }
+
+/*Output:
+2
+*/
