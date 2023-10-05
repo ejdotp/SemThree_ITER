@@ -1,5 +1,5 @@
 //Find the smallest smallest missing positive number
-
+import java.util.*;
 public class Small_Missing
 {
     public static void main(String[] args)
