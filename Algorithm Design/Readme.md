@@ -1,3 +1,3 @@
 >**[ADT] Abstract Data Type:**
->>*ADT [array] - iterative  
->>*ADT [array] - recursive
+>>* ADT [array] - iterative  
+>>* ADT [array] - recursive
