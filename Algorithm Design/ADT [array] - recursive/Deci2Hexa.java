@@ -22,11 +22,16 @@ class Deci2Hexa
        Deci2Hexa d=new Deci2Hexa();
         int dec, rem, q;
         Scanner sc = new Scanner(System.in);   
-        System.out.println("Enter a Decimal number: ");
+        System.out.print("Enter a Decimal number: ");
         dec=sc.nextInt();
-        System.out.println("Hexadecimal number is : ");
+        System.out.print("Hexadecimal number is: ");
         String h=d.hexadecimal(dec);    	       
         System.out.print(h);
 
      }    
 }
+
+/*Output:
+Enter a Decimal number: 60
+Hexadecimal number is: 3C
+*/
