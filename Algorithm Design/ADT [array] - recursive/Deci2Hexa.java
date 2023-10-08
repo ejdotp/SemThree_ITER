@@ -37,8 +37,3 @@ class Deci2Hexa
 Enter a Decimal number: 60
 Hexadecimal number is: 3C
 */
-
-/*Output:
-Enter a Decimal number: 60
-Hexadecimal number is: 3C
-*/
