@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>
+            My 30th Webpage
+        </title>
+
+        <link rel="stylesheet" href="st.css">
+    </head>
+
+    <body>
+
+        <h1> Image Mapping: </h1>
+        <img src="https://i.pinimg.com/736x/9e/ec/25/9eec253aa02808294eaa87135f5ab204--color-psychology-theme-ideas.jpg" alt="Describe the picture" usemap="#shapemap" width="736" height="251">
+        <map name="shapemap" >
+            <area shape="rect" coords="449,5,589,99" href="https://google.com" alt="rect">
+            <area shape="circle" coords="67,53,52" href="https://github.com/ejdotp" alt="circ">
+            <area shape="poly" coords="383,126,404,167,449,173,416,206,424,250,384,229,344,250,351,205,319,174,364,167,383,126" href="https://github.com/ejdotp/SemThree_ITER" onclick="myfun()" alt="star">
+        </map>
+        <script>
+            function myfun()
+            {
+                alert("You are a STAR now!!!!!");
+            }
+        </script>
+        
+    </body>
+
+</html>
