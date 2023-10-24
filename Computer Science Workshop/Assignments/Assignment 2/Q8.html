@@ -1,0 +1,74 @@
+<!--Question 8-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+    <style>
+        body{
+            background-color: rgb(168, 200, 222);
+            text-align: center;
+        }
+        #returnBox{
+            width: 100%;
+            display: block;
+        }
+        .drop{
+            font-family: monospace;
+            background-color: rgb(255, 255, 255);
+            min-width: 200px;
+            min-height: 50px;
+            z-index: 1;
+            box-shadow: 0px 6px 10px 0px;
+        }
+        #dropstyle{
+            font-style: normal;
+            background-color: rgb(245, 166, 166);
+            font-family:none;
+        }
+        #input{
+            background-color: #fff;
+            height: 30px;
+            width: 250px;
+            border: 2px solid rgb(114, 177, 250);
+            padding: 4px;
+            border-radius: 10px;
+        }
+        #Submit{
+            width: 170px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 3px solid #8C82FC;
+            background: #fff;
+            color: #8C82FC;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        #Submit:hover {
+        background: #8C82FC;
+        color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <h2>Select Reason for Return:</h2>
+            <select name="selection" class="drop">
+               <option value="Too Small" id="dropstyle"><a href="#" >Too Small</a></option> 
+               <option value="Too Large" id="dropstyle"> <a href="#" >Too Large</a></option>
+               <option value="Doesnt Fit Well" id="dropstyle"><a href="#" >Doesn't Fit Well</a></option>
+               <option value="Wrong Product" id="dropstyle"><a href="#" >Wrong Product</a></option>
+               <option value="Others" id="dropstyle"><a href="#" >Others</a></option>           
+            </select>
+        </div>
+        <div  id="returnBox" >
+            <label for="in"><h3>Please Elaborate:</h3></label>
+            <input type="text" id="input" placeholder="min 25 characters required">
+        </div>
+        <br>
+       <button type="submit" id="Submit">Submit</button>
+    </form>
+</body>
+</html>

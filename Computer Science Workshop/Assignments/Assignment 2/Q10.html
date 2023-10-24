@@ -1,0 +1,86 @@
+<!--Question 10-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+    <style>
+        body{
+            background-color: rgb(174, 168, 168);
+        }
+        *{  
+            margin-bottom: 10px;
+        }
+        .align{
+            width: 72px;
+            float: left;
+        }
+        .alignn{
+            width: 72px;
+            margin-left: -71.5px;
+            float: left;
+        }
+        #submit{
+            border: solid rgb(245, 160, 123);
+            background-color: rgb(245, 160, 123);
+            width: 281px;
+            height: 40px;
+        }
+        #username,#email,#password,#mobile{
+            border: 3px solid blue;
+            min-width: 200px;
+            min-height: 27px;
+            border-radius: 4.5px;
+        }
+        #city{
+            border: 3px solid blue;
+            min-width: 208px;
+            min-height: 32px;
+            border-radius: 4.5px;
+        }
+        img{
+            margin-left: 96px;
+            height: 100px;
+            width: 100px;
+        }
+        h3{
+            margin-left: 96px;
+            margin-top: -8px;
+            margin-bottom: -8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Main">
+        <form action="/soa">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Siksha_%E2%80%98O%E2%80%99_Anusandhan.png" alt="soa"><br>
+            <h3>Registration</h3><br>
+            <div class="align"><label for="username">UserName</label></div>
+            <input type="text" placeholder="Enter name..." id="username"> <br>
+            <div class="align"><label for="email">Email</label></div>
+            <input type="email" placeholder="Enter email" id="email"><br>
+            <div class="align"><label for="mobile">Mobile</label></div>
+            <input type="number" id="mobile" placeholder="Enter MobileNo..."><br>
+            <div class="align"><label for="male">Gender</label></div>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <div class="alignn"><label for="city">City</label></div>
+            <select name="city" id="city" type="text">
+               <option value="Bhubaneswar">Bhubaneswar</option>
+               <option value="Nayagarh">Nayagarh</option>
+               <option value="Puri">Puri</option>
+               <option value="Rourkela">Rourkela</option>
+               <option value="Brahmapur">Brahmapur</option>
+               <option value="Select City" selected>Select City</option>
+            </select>
+            <br>
+            <div class="align"><label for="password">Password</label></div>
+            <input type="password" id="password" placeholder="password"><br>
+            <button type="submit" id="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
