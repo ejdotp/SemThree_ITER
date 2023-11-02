@@ -18,8 +18,14 @@
     <script>
         let pi=3.143723;
         pi=3.15;  //wont work reassign unless you add 'let' in initialization
-        dgEb(demo).H=pi;
+        document.getElementById("demo").innerHTML = "The value of PI is "+pi+".";
     </script>
-    
+<hr>
+    <p id="demo1"></p>
+    <script>
+        let x="Aditi";
+        let x=10;  //wont work reassign unless you add 'let' in initialization
+        document.getElementById("demo1").innerHTML = x+".";
+    </script>
 </body>
 </html>
