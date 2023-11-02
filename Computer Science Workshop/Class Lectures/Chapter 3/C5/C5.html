@@ -1,3 +1,11 @@
+<!--
+    -------------------------------------------------
+   |_______| Scope | Redeclare | Re-assign | Hoisted | 
+   | VAR   |  No   |    Yes    |    Yes    |   Yes   |
+   | let   |  Yes  |     No    |    Yes    |    No   |
+   | const |  Yes  |     No    |     No    |    No   |
+    -------------------------------------------------
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +14,12 @@
     <title>My 61st Webpage</title>
 </head>
 <body>
+    <p id="demo"></p>
+    <script>
+        let pi=3.143723;
+        pi=3.15;  //wont work reassign unless you add 'let' in initialization
+        dgEb(demo).H=pi;
+    </script>
     
 </body>
 </html>
