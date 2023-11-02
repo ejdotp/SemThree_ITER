@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS numbers</h2>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML=10.0;
+    </script>
+    <hr>
+    <script>
+        let x;
+        x=7;
+        document.getElementById("demo").innerHTML=x;
+    </script>
+    <script>
+        document.getElementById("demo").innerHTML=(5*6+10)-7;
+    </script>
+    <h2>JS expression</h2>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <script>
+        document.getElementById("d1").innerHTML=50*25;
+        var y;
+        y=17;
+        document.getElementById("d2").innerHTML=y*5;
+        document.getElementById("d3").innerHTML="I "+"am "+"Batman";
+    </script>
+    <hr>
+    <p id="demo1"></p>
+    <script>
+        x=5;
+        y=10;
+        z=x+y;
+        document.getElementById("demo1").innerHTML="The value of z = "+z;
+    </script>
+    <!-- string version -->
+    <script>
+        x="5";
+        y="10";
+        z=x+y;
+        document.getElementById("demo1").innerHTML="The value of z = "+z;
+    </script>
+    <hr>
+    <h2>Redeclaring variables</h2>
+    <p id="d-1"></p>
+    <p id="d-2"></p>
+    <p id="d-3"></p>
+    <script>
+        var z=10;
+        document.getElementById("d-1").innerHTML=z;
+        {
+           let z=4
+            document.getElementById("d-2").innerHTML=z;
+        }
+        // z=12
+        document.getElementById("d-3").innerHTML=z;
+    </script>
+    <hr>
+</body>
+</html>
