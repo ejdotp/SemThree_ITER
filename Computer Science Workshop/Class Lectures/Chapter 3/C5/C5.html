@@ -36,5 +36,16 @@
         var CarName;       //can assign vars before declaring but cat while using let
         document.getElementById("demo2").innerHTML = CarName;
     </script>
+<hr>
+    <p id="demo3"></p>
+    <script>
+        try{
+            let a=10.56;
+            a="Aditi";
+        }
+        catch(err){
+            document.getElementById('demo3').innerHTML=err;
+        }
+    </script>
 </body>
 </html>
