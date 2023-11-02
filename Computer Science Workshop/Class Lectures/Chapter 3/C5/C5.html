@@ -24,8 +24,16 @@
     <p id="demo1"></p>
     <script>
         let x="Aditi";
-        let x=10;  //wont work reassign unless you add 'let' in initialization
+        let x=10;  //cannot redeclare
         document.getElementById("demo1").innerHTML = x+".";
+    </script>
+    <p>This work No No. [check code to understand]</p>
+<hr>
+    <p id="demo2"></p>
+    <script>
+        CarName="Tata";
+        var CarName;
+        document.getElementById("demo2").innerHTML = CarName;
     </script>
 </body>
 </html>
