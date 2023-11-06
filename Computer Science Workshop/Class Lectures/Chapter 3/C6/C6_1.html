@@ -21,7 +21,8 @@ Basic Syntax: $(selector).action()
         <script>
             $(document).ready(function(){
                 $("button").click(function(){
-                    $("#aiyen, h1, p, .beingan").hide();
+                    //$("#aiyen, h1, p, .beingan").hide();
+                    $("*").hide(); //hides everything, even the button
                 });
             });
         </script>
