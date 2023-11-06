@@ -22,16 +22,17 @@ Basic Syntax: $(selector).action()
             $(document).ready(function(){
                 $("button").click(function(){
                     //$("#aiyen, h1, p, .beingan").hide();
-                    $("*").hide(); //hides everything, even the button
+                    //$("*").hide(); hides everything, even the button
+                    $("p.wow").hide();
                 });
             });
         </script>
     </head>
     <body>
-        <h1>This is header h1</h1>
+        <h1 class="wow">This is header h1</h1>
         <h2 id="aiyen">This is header h2</h2>
         <h3 class="beingan">This is header h3</h3>
-        <p>This is a paragraph</p>
+        <p class="wow">This is a paragraph</p>
         <p>This is another paragraph</p>
         <button>click me</button>
     </body>
