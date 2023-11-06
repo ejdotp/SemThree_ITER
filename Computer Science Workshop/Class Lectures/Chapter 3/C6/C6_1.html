@@ -21,8 +21,7 @@ Basic Syntax: $(selector).action()
         <script>
             $(document).ready(function(){
                 $("button").click(function(){
-                    $("p").hide();
-                    $("h1").hide();
+                    $("p, h1").hide();
                 });
             });
         </script>
