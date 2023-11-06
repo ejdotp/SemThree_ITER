@@ -21,16 +21,16 @@ Basic Syntax: $(selector).action()
         <script>
             $(document).ready(function(){
                 $("button").click(function(){
-                    $("#test, h1").hide();
+                    $("#test, h1, p").hide();
                 });
             });
         </script>
     </head>
     <body>
         <h1>This is header h1</h1>
-        <h2>This is header h2</h2>
+        <h2 id="test">This is header h2</h2>
         <p>This is a paragraph</p>
-        <p id="test">This is another paragraph</p>
+        <p>This is another paragraph</p>
         <button>click me</button>
     </body>
 </html>
