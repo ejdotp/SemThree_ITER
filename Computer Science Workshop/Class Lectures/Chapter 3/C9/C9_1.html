@@ -5,37 +5,65 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
+            $("#1").click(function(){
                 $("#div1").fadeIn();
                 $("#div2").fadeIn("slow");
-                $("#div3").fadeIn(3000);
+                $("#div3").fadeIn(3000); 
+            });
+            $("#2").click(function(){
                 $("#div4").fadeOut();
                 $("#div5").fadeOut("slow");
-                $("#div6").fadeOut(3000);
+                $("#div6").fadeOut(3000);  
+            });
+            $("3").click(function(){
                 $("#div7").fadeToggle();
                 $("#div8").fadeToggle("fast");
-                $("#div9").fadeToggle(3000);
-                $("#div10").toggle();
-                $("#div11").toggle("fast");
-                $("#div12").toggle(3000);
+                $("#div9").fadeToggle(3000);  
+            });
+            $("#4").click(function(){
+                $("#div10").toggle(1000);
+                $("#div11").toggle(2000);
+                $("#div12").toggle(3000);  
+            });
+            $("#5").click(function(){
+                $("#div13").fadeTo("fast",0.7);
+                $("#div14").fadeTo("slow",0.7);
+                $("#div15").fadeTo("fast",0.15);   
+            });
+            $("#flip").click(function(){
+                $("#panel").slideDown(1000);
             });
         });
     </script>
 </head>
 <body>
     <p>Demonstrate fadeIn() with different parameters.</p>
-    <button>Click to fade in boxes</button><br><br>
+    <button id="1">Click to fade in boxes</button><br><br>
     <div id="div1" style="width:80px; height:80px;background-color:orange; display:none;"></div><br>
-    <div id="div2" style="width:80px; height:80px;background-color:white; display:none;"></div><br>
+    <div id="div2" style="width:80px; height:80px;background-color:rgb(185, 183, 183); display:none;"></div><br>
     <div id="div3" style="width:80px; height:80px;background-color:green; display:none;"></div><br>
-    <div id="div4" style="width:80px; height:80px;background-color:orange;"></div><br>
-    <div id="div5" style="width:80px; height:80px;background-color:white;"></div><br>
-    <div id="div6" style="width:80px; height:80px;background-color:green;"></div><br>
-    <div id="div7" style="width:80px; height:80px;background-color:orange;"></div><br>
-    <div id="div8" style="width:80px; height:80px;background-color:white;"></div><br>
-    <div id="div9" style="width:80px; height:80px;background-color:green;"></div><br>
-    <div id="div10" style="width:80px; height:80px;background-color:orange;"></div><br>
-    <div id="div11" style="width:80px; height:80px;background-color:white;"></div><br>
+
+    <button id="2">Click to fade out boxes</button><br><br>
+    <div id="div4" style="width:80px; height:80px;background-color:rgb(0, 255, 42);"></div><br>
+    <div id="div5" style="width:80px; height:80px;background-color:rgb(207, 15, 15);"></div><br>
+    <div id="div6" style="width:80px; height:80px;background-color:rgb(34, 0, 128);"></div><br>
+
+    <button id="3">Click to fade toggle boxes</button><br><br>
+    <div id="div7" style="width:80px; height:80px;background-color:rgb(255, 0, 255);"></div><br>
+    <div id="div8" style="width:80px; height:80px;background-color:rgb(202, 24, 24);"></div><br>
+    <div id="div9" style="width:80px; height:80px;background-color:rgb(15, 226, 15);"></div><br>
+
+    <button id="4">Click to toggle in boxes</button><br><br>
+    <div id="div10" style="width:80px; height:80px;background-color:rgb(255, 145, 0);"></div><br>
+    <div id="div11" style="width:80px; height:80px;background-color:rgb(173, 114, 114);"></div><br>
     <div id="div12" style="width:80px; height:80px;background-color:green;"></div><br>
+
+    <button id="5">Click to fade to boxes</button><br><br>
+    <div id="div13" style="width:80px; height:80px;background-color:rgb(22, 156, 245)"></div><br>
+    <div id="div14" style="width:80px; height:80px;background-color:rgb(212, 19, 19);"></div><br>
+    <div id="div15" style="width:80px; height:80px;background-color:rgb(13, 194, 13);"></div><br>
+
+    <div id="flip">click to slide down panel</div>
+    <div id="panel">hello section 44!</div>
 </body>
 </html>
