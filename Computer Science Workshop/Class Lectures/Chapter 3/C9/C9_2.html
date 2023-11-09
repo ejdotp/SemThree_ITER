@@ -26,6 +26,13 @@
                     height: 'toggle'
                 });
             });
+            $("#b4").click(function(){
+                var div = $("#4");
+                div.animate({height:'300px',opacity:'0.4'},"slow");
+                div.animate({width:'300px',opacity:'0.8'},"slow");
+                div.animate({height:'100px',opacity:'0.4'},"slow");
+                div.animate({width:'100px',opacity:'0.8'},"slow");
+            });
         });
     </script>
     <style>
@@ -68,5 +75,10 @@
     <p>click the button multiple times</p>
     <button id="b3">Start Animation</button>
     <div id="3" style="background: #98bf21; height:100px; width:100px; position:absolute;"></div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <p>click the button multiple times</p>
+    <button id="b4">Start Animation</button>
+    <div id="4" style="background: #98bf21; height:100px; width:100px; position:absolute;"></div>
 </body>
 </html>
