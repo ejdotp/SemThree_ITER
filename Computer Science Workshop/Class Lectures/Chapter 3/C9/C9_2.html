@@ -21,6 +21,11 @@
                     height:'150px',
                     width:'150px'},2000);
             });
+            $("#b3").click(function(){
+                $("#3").animate({
+                    height: 'toggle'
+                });
+            });
         });
     </script>
     <style>
@@ -58,5 +63,10 @@
     <br><br><br><br><br><br><br>
     <button id="b2">Start Animation</button>
     <div id="2" style="background: #98bf21; height:100px; width:100px; position:absolute;"></div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>click the button multiple times</p>
+    <button id="b3">Start Animation</button>
+    <div id="3" style="background: #98bf21; height:100px; width:100px; position:absolute;"></div>
 </body>
 </html>
