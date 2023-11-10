@@ -6,6 +6,7 @@ public class FindMaxMinPair
     {
         int[] arr = {2, 4, 6, 3, 7, 11, 9};
         int[] minpair = new int[2];
+        int[] maxpair = new int[2];
         int temp, diff=Integer.MAX_VALUE;
         for (int i=0; i<arr.length; i++)
         {
@@ -24,6 +25,8 @@ public class FindMaxMinPair
         }
         System.out.println("Min pair is"+Arrays.toString(minpair));
         Arrays.sort(arr);
-        System.out.println("Max pair is"+arr[0]+" "+arr[arr.length-1]);
+        maxpair[0] = arr[0];
+        maxpair[1] = arr[arr.length-1];
+        System.out.println("Max pair is"+Arrays.toString(maxpair));
     }
 }
