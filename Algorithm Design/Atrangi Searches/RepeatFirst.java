@@ -15,7 +15,7 @@ public class RepeatFirst
 		System.out.println("First repeated element is: "+Repeat(arr));
 	}
 }
-
+                                 
 /*Output:
  First repeated element is: 5
  */

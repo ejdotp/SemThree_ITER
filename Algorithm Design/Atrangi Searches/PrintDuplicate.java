@@ -5,8 +5,12 @@ public class PrintDuplicate
 	{
 		for(int i=0; i<a.length; i++)
 			for(int j=i+1; j<a.length; j++)
-				if(a[j]==a[i])
+			{
+				if(a[j]==a[i]){
 					System.out.print(a[j]+" ");
+					j=a.length;
+				}
+			}
 	}
 	public static void main(String[] args)
 	{
