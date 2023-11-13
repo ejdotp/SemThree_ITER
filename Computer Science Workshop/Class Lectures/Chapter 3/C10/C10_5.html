@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#soa").attr({
+                 "href" : "https://www.google.com/",
+                 "tittle" : "SOA University"
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <p><a href="https://www.google.com/" tittle="google" id="soa">Go to.</a></p>
+    <button>Change href to title</button>
+    <p>Mouse over the link to see that the href attribute has changed and a tittle attribute is set..</p>
+</body>
+</html>

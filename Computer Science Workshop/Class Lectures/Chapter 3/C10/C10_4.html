@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#soa").attr("href", "https://www.google.com/");
+            });
+        })
+    </script>
+</head>
+<body>
+    <p><a href="https://www.soa.ac.in/" id="soa">soa</a></p>
+    <button>Change href Value</button>
+    <p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+</body>
+</html>
