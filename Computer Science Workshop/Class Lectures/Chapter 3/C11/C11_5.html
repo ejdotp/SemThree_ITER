@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").remove(".test, .result");
+            })
+        })
+    </script>
+    <style>
+        .test{
+            color: red;
+            font-size: 20px;
+        }
+        .result{
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>para</p>
+    <p class="test">para</p>
+    <p class="result">para</p>
+    <button>Remove</button>
+</body>
+</html>
