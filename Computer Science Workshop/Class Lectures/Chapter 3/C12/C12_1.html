@@ -8,8 +8,7 @@
     <script>
         $(document).ready(function(){
             $("button").click(function(){
-                $("h1, h2, p").toggleClass("blue");
-                $("div").toggleClass("important");
+                alert("Background color = " + $("p").css("background-color"));
             });
         });
     </script>
