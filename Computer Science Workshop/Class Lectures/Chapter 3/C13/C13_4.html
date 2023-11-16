@@ -12,22 +12,31 @@
                 padding: 5px;
                 margin: 15px;
             }
+            .first{
+                display: block;
+                border: 2px solid lightgrey;
+                color: cyan;
+            }
+            .second{
+                display: block;
+                border: 2px solid lightgrey;
+                color: seagreen;
+            }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $("div").children("p,find").css({"color":"red","border":"2px solid red"});
+                $("div").children("p.first").css({"color":"red","border":"2px solid red"});
             });
         </script>
     </head>
     <body>
-        <div class="descendants" style="width:500px;">div (parent)
-            <div>kffdgsgfdgfs
-            <p>p (child)
+        <div class="descendants" style="width:500px;">div (current element)
+            <p class="first">p (child)
                 <span>span (grandchild) </span>
             </p>
             </div>
-            <p>p (child)
+            <p class="second">p (child)
                 <span>span (grandchild)</span>
             </p>
         </div>
