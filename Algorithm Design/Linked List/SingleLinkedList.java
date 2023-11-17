@@ -11,7 +11,7 @@ public class SingleLinkedList{
 	}
 	public static Node head;
 	public static Node tail;
-	public static void addFirst(int data)
+	public static void addfirst(int data)
 	{
 			Node newNode = new Node(data);
 			if(head==null)
@@ -39,7 +39,7 @@ public class SingleLinkedList{
 	{
 		if(key==0)
 		{
-			addFirst(data);
+			addfirst(data);
 			return;
 		}
 		Node newNode = new Node(data);
@@ -133,13 +133,19 @@ public class SingleLinkedList{
 			case 1:
 				  System.exit(0);
 			case 2:
-				  addfirst(9);
+			      System.out.print("Enter element: ");
+			      int x = sc.nextInt();
+				  addfirst(x);
 				  break;
 			case 3:
-				  addlast(8);
+				  System.out.print("Enter element: ")
+			      int y = sc.nextInt();
+			      addlast(y);
 				  break;
 			case 4:
-				  addany(8, 2);
+			      System.out.print("Enter element and position: ");
+				  int z = sc.nextInt(), p = sc.nextInt();
+				  addany(z, p);
 				  break;
 			case 5:
 				  delfirst();
@@ -148,7 +154,9 @@ public class SingleLinkedList{
 				  dellast();
 				  break;
 			case 7:
-				  delany(3);
+			      System.out.print("Enter position to delete: "));
+				  int q = sc.nextInt();
+				  delany(q);
 				  break;
 			case 8:
 				  print();
