@@ -11,7 +11,7 @@ public class SingleLinkedList{
 	}
 	public static Node head;
 	public static Node tail;
-	public void addFirst(int data)
+	public static void addFirst(int data)
 	{
 			Node newNode = new Node(data);
 			if(head==null)
@@ -23,7 +23,7 @@ public class SingleLinkedList{
 			head = newNode;
 	}
 
-	public void addlast(int data)
+	public static void addlast(int data)
 	{
 		Node newNode = new Node(data);
 		if(head==null)
@@ -35,7 +35,7 @@ public class SingleLinkedList{
 		tail=newNode;
 	}
 
-	public void addany(int data, int key)
+	public static void addany(int data, int key)
 	{
 		if(key==0)
 		{
@@ -54,7 +54,7 @@ public class SingleLinkedList{
 		temp.next = newNode;
 	}
 
-	public void delfirst()
+	public static void delfirst()
 	{
 		if(head==null)
 			System.out.println("Linked list is empty");
@@ -63,7 +63,7 @@ public class SingleLinkedList{
 		head = head.next;
 	}
 
-	public void dellast()
+	public static void dellast()
 	{
 		if(head==null)
 			System.out.println("Linked list is empty");
@@ -75,7 +75,7 @@ public class SingleLinkedList{
 		temp.next = tail;
 	}
 
-	public void delany(int key)
+	public static void delany(int key)
 	{
 		if(head==null)
 			System.out.println("Linked list is empty");
@@ -91,7 +91,7 @@ public class SingleLinkedList{
 		temp.next = temp.next.next;
 	}
 
-	public void print()
+	public static void print()
 	{
 		if(head==null)
 			System.out.println("Linked list is empty");
@@ -104,7 +104,7 @@ public class SingleLinkedList{
 		System.out.println("null");
 	}
 
-	public void reverse()
+	public static void reverse()
 	{
 		if(head==null)
 			System.out.println("Linked list is empty");
@@ -133,13 +133,13 @@ public class SingleLinkedList{
 			case 1:
 				  System.exit(0);
 			case 2:
-				  addfirst();
+				  addfirst(9);
 				  break;
 			case 3:
-				  addlast();
+				  addlast(8);
 				  break;
 			case 4:
-				  addany();
+				  addany(8, 2);
 				  break;
 			case 5:
 				  delfirst();
@@ -148,7 +148,7 @@ public class SingleLinkedList{
 				  dellast();
 				  break;
 			case 7:
-				  delany();
+				  delany(3);
 				  break;
 			case 8:
 				  print();
