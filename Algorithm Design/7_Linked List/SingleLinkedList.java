@@ -75,9 +75,10 @@ public class SingleLinkedList
 		if(head.next==tail)
 			head = null;
 		Node temp = head;
-		while(temp.next.next!=tail)
+		while(temp.next.next != null)
 			temp=temp.next;
-		temp.next = tail;
+		tail = temp;
+		temp.next = null;
 	}
 
 	public static void delany(int key)
@@ -128,7 +129,8 @@ public class SingleLinkedList
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
-		while(true)
+		boolean flag = true;
+		while(flag)
 		{
 			System.out.println();
 			System.out.println("Enter Choice");
@@ -137,7 +139,8 @@ public class SingleLinkedList
 			switch(n)
 			{
 			case 1:
-				  System.exit(0);
+				  flag = false;
+				  break;
 			case 2:
 				  System.out.print("Enter element: ");
 			      int x = sc.nextInt();
@@ -173,6 +176,8 @@ public class SingleLinkedList
 				  print();
 				  System.out.println();
 				  break;
+			default:
+			      System.out.println("Invalid Response!");
 			}
 		}
 	}
@@ -322,7 +327,7 @@ Enter Choice
 8: Print 
 9: Reverse
 8
-3->7->2->0->null
+3->7->2->1->null
 
 
 Enter Choice
@@ -349,7 +354,7 @@ Enter Choice
 8: Print 
 9: Reverse
 8
-3->7->0->null
+3->7->1->null
 
 
 Enter Choice
@@ -363,7 +368,7 @@ Enter Choice
 8: Print 
 9: Reverse
 9
-0->7->3->null
+1->7->3->null
 
 
 Enter Choice
