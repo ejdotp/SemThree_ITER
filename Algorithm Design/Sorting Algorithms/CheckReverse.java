@@ -43,3 +43,6 @@ public class CheckReverse
 		System.out.println(checkReverse(arr1, arr1.length));
 	}
 }
+/* Output:
+true
+ */
