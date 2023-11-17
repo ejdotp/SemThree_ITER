@@ -133,12 +133,12 @@ public class SingleLinkedList{
 			case 1:
 				  System.exit(0);
 			case 2:
-			      System.out.print("Enter element: ");
+				  System.out.print("Enter element: ");
 			      int x = sc.nextInt();
 				  addfirst(x);
 				  break;
 			case 3:
-				  System.out.print("Enter element: ")
+				  System.out.print("Enter element: ");
 			      int y = sc.nextInt();
 			      addlast(y);
 				  break;
@@ -154,7 +154,7 @@ public class SingleLinkedList{
 				  dellast();
 				  break;
 			case 7:
-			      System.out.print("Enter position to delete: "));
+			      System.out.print("Enter position to delete: ");
 				  int q = sc.nextInt();
 				  delany(q);
 				  break;
@@ -171,3 +171,203 @@ public class SingleLinkedList{
 		}
 	}
 }
+
+/*Output:
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+2
+Enter element: 1
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+2
+Enter element: 2
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+2
+Enter element: 3
+
+Enter Choice
+1: Exit the matrix 
+
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+2
+Enter element: 4
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+3
+Enter element: 0
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+4
+Enter element and position: 7
+2
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+8
+4->3->7->2->1->0->null
+
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+5
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+8
+3->7->2->1->0->null
+
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+6
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+8
+3->7->2->0->null
+
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+7
+Enter position to delete: 2
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+8
+3->7->0->null
+
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+9
+0->7->3->null
+
+
+Enter Choice
+1: Exit the matrix 
+2: Insert at Beginning 
+3: Instert at End 
+4: Insert at any 
+5: Delete Beginning 
+6: Delete End Node 
+7: Delete Any 
+8: Print 
+9: Reverse
+1 */

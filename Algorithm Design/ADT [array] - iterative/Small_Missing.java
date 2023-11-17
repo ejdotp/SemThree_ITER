@@ -6,13 +6,11 @@ public class Small_Missing
     {
         
         int[] nums = {3, 4, -1, 1};
-        boolean flag = false;
         Arrays.sort(nums);
         for(int i=0; i<nums.length; i++)
         {
             if(nums[i]>0 && (nums[i]+1 != nums[i+1]))
             {
-                flag = true;
                 System.out.println(nums[i]+1);
                 break;
             }
