@@ -1,6 +1,9 @@
+//Perform insertion(at any node), delete(at any node), create, traversing & reverse
 import java.util.*;
-public class SingleLinkedList{
-	static class Node{
+public class SingleLinkedList
+{
+	static class Node
+	{
 		int data;
 		Node next;
 		Node(int data)
@@ -9,18 +12,20 @@ public class SingleLinkedList{
 			this.next=null;
 		}
 	}
+
 	public static Node head;
 	public static Node tail;
+
 	public static void addfirst(int data)
 	{
-			Node newNode = new Node(data);
-			if(head==null)
-			{
-				head = tail = newNode;
-				return;
-			}
-			newNode.next = head;
-			head = newNode;
+		Node newNode = new Node(data);
+		if(head==null)
+		{
+			head = tail = newNode;
+			return;
+		}
+		newNode.next = head;
+		head = newNode;
 	}
 
 	public static void addlast(int data)
@@ -120,8 +125,9 @@ public class SingleLinkedList{
 		head=curr;
 	}
 
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
 		while(true)
 		{
 			System.out.println();
