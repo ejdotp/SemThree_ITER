@@ -1,0 +1,136 @@
+<!-- Question 8. Create a front end page which performs Job listings with filtering. Include data of
+at least 20 Job categories, 100 jobs.
+In this challenge, you will need to filter the job listings by the categories selected. You can use 
+HTML, CSS, Java Script (JQuery) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#category, #location').change(function() {
+                var category = $('#category').val();
+                var location = $('#location').val();
+
+                if (category === '' && location === '') {
+                    $('.job').show();
+                } else if (category === '') {
+                    $('.job.' + location).show();
+                    $('.job:not(.' + location + ')').hide();
+                } else if (location === '') {
+                    $('.job.' + category).show();
+                    $('.job:not(.' + category + ')').hide();
+                } else {
+                    $('.job.' + category + '.' + location).show();
+                    $('.job:not(.' + category + '.' + location + ')').hide();
+                }
+	        });
+        });
+    </script>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filters {
+            margin-bottom: 20px;
+        }
+
+        .filters label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .filters select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .jobs ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .jobs li {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .jobs li:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+		<h1>Job Listings</h1>
+		<div class="filters">
+			<h2>Filters</h2>
+			<label for="category">Category:</label>
+			<select id="category">
+				<option value="">All</option>
+				<option value="design">Design</option>
+				<option value="it">IT</option>
+				<option value="marketing">Marketing</option>
+				<option value="sales">Sales</option>
+			</select>
+
+			<label for="location">Location:</label>
+			<select id="location">
+				<option value="">All</option>
+				<option value="new-york">New York</option>
+				<option value="san-francisco">San Francisco</option>
+				<option value="los-angeles">Los Angeles</option>
+				<option value="chicago">Chicago</option>
+			</select>
+		</div>
+
+		<div class="jobs">
+			<ul>
+				<li class="job design new-york">Graphic Designer</li>
+                <li class="job sales new-york">Sales Representative</li>
+                <li class="job sales new-york">Account Executive</li>
+                <li class="job marketing new-york">Marketing Manager</li>
+                <li class="job marketing new-york">Social Media Manager</li>
+
+				<li class="job it san-francisco">Web Developer</li>
+                <li class="job marketing san-francisco">Marketing Manager</li>
+                <li class="job marketing san-francisco">Social Media Manager</li>
+                <li class="job finance san-francisco">Accountant</li>
+                <li class="job finance san-francisco">Financial Analyst</li>
+
+				<li class="job marketing los-angeles">Marketing Manager</li>
+                <li class="job it los-angeles">IT Support Specialist</li>
+                <li class="job it los-angeles">System Administrator</li>
+                <li class="job finance los-angeles">Auditor</li>
+                <li class="job finance los-angeles">Tax Analyst</li>
+
+				<li class="job sales chicago">Sales Representative</li>
+                <li class="job marketing chicago">Content Marketing Specialist</li>
+                <li class="job marketing chicago">Public Relations Specialist</li>
+                <li class="job marketing chicago">Digital Marketing Specialist</li>
+				<li class="job it chicago">Software Engineer</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

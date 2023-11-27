@@ -1,0 +1,153 @@
+<!-- Question 9. Build a game, namely Rock, Paper, Scissors. This Rock, Paper, Scissors game will 
+require the advance skill of both your CSS skills and Java Script. 
+Your users should be able to:
+(i) View the optimal layout for the game depending on their device's screen size
+(ii) Play Rock, Paper, Scissors against the computer
+(iii) Maintain the state of the score after refreshing the browser (optional) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            const choices = ['Rock', 'Paper', 'Scissors'];
+            const playerChoiceButtons = $('#player-choice button');
+            const computerChoiceImage = $('#computer-choice img');
+            const resultText = $('#result-text');
+            const scoreValue = $('#score-value');
+            let score = 0;
+
+            playerChoiceButtons.on('click', function() {
+                const playerChoice = $(this).text();
+                const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+                computerChoiceImage.attr('src', `${computerChoice}.png`);
+
+                if (playerChoice === computerChoice) {
+                resultText.text('It\'s a tie!');
+                } else if (playerChoice === 'Rock' && computerChoice === 'Paper') {
+                resultText.text('You lose!');
+                score--;
+                } else if (playerChoice === 'Rock' && computerChoice === 'Scissors') {
+                resultText.text('You win!');
+                score++;
+                } else if (playerChoice === 'Paper' && computerChoice === 'Rock') {
+                resultText.text('You win!');
+                score++;
+                } else if (playerChoice === 'Paper' && computerChoice === 'Scissors') {
+                resultText.text('You lose!');
+                score--;
+                } else if (playerChoice === 'Scissors' && computerChoice === 'Rock') {
+                resultText.text('You lose!');
+                score--;
+                } else if (playerChoice === 'Scissors' && computerChoice === 'Paper') {
+                resultText.text('You win!');
+                score++;
+                }
+
+                scoreValue.text(score);
+            });
+        });
+    </script>
+    <style>
+        #container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+
+        #game-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        #player-choice,
+        #computer-choice {
+            margin: 2rem;
+        }
+
+        #player-choice h2,
+        #computer-choice h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #player-choice button {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-family: fantasy;
+            font-size: 1.5em;
+        }
+
+        #computer-choice img {
+            width: 100px;
+            height: 100px;
+        }
+        #player-choice img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #rock-btn {
+            color: #19aba0;
+        }
+
+        #paper-btn {
+            color: #e2122c;
+        }
+
+        #scissors-btn {
+            color: #b3cc33;
+        }
+
+        #game-result {
+            margin-top: 2rem;
+        }
+
+        #result-text {
+            font-size: 1.5rem;
+        }
+
+        #score-text {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Rock, Paper, Scissors</h1>
+
+        <div id="game-area">
+            <div id="player-choice">
+                <h2>Your Choice</h2>
+                <button id="rock-btn"><img src="Rock.png" alt="Rock"><br>Rock</button>
+                <button id="paper-btn"><img src="Paper.png" alt="Paper"><br>Paper</button>
+                <button id="scissors-btn"><img src="Scissors.png" alt="Scissors"><br>Scissors</button>
+            </div>
+
+            <div id="computer-choice">
+                <h2>Computer's Choice</h2>
+                <img src="All.png" alt="Computer's Choice">
+            </div>
+
+            <div id="game-result">
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

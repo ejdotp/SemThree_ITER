@@ -1,0 +1,38 @@
+<!-- Question 1. Count child elements using jQuery. Note: Count number of "p" elements 
+from the following:
+<body>
+<div id="selected"> 
+<p>Red</p>
+<p>White</p>
+<p>Green</p>
+<p>Black</p>
+<p>Blue</p>
+<p>Orange</p>
+</div>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var Count = $("p").length;
+            alert("There are " + Count + " no. of <p> elements in the document.");
+        });
+    </script>
+</head>
+<body>
+    <div id="selected"> 
+        <p>Red</p>
+        <p>White</p>
+        <p>Green</p>
+        <p>Black</p>
+        <p>Blue</p>
+        <p>Orange</p>
+    </div>
+</body>
+</html>

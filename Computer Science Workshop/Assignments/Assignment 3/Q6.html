@@ -1,0 +1,50 @@
+<!-- Question 6. Create a page which contains a table and add button which will add 
+rows to this table. Change color of a text on button click. Add a text box and a 
+button. Write code to remove all the elements which ID matches with the text 
+entered in the text box upon clicking on the button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).ready(function(){
+                $("#addRow").click(function(){
+                    $("#myTable").append("<tr><td>Jonas</td><td>Kahnwald</td></tr>");
+                });
+
+                $("#changeColor").click(function(){
+                    $("body").css("color", "red");
+                });
+
+                $("#removeElement").click(function(){
+                    let id = $("#elementId").val();
+                    $("#" + id).remove();
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr id="michael">
+            <td>Michael</td>
+            <td>Kahnwald</td>
+        </tr>
+    </table>
+    
+    <button id="addRow">Add row</button>
+    <button id="changeColor">Change color</button>
+    
+    <input type="text" id="elementId">
+    <button id="removeElement">Remove Element</button>
+</body>
+</html>

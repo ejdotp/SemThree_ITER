@@ -1,0 +1,54 @@
+<!-- Question 5. Create an HTML page which uses the following methods, (i) 
+slideDown(), (ii) animate(), (iii) fadeIn(), (iv) hide(), (v) show(), (vi) mouseenter(), 
+(vii) dblclick(), (viii) mouseleave(), (ix) attr(), and (x) html(). -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").mouseenter(function(){
+                $("#box").slideDown(2000);
+            });
+        
+            $("#btn").dblclick(function(){
+                $("#box").animate({left: '250px'});
+            });
+        
+            $("#btn").mouseleave(function(){
+                $("#box").fadeIn();
+            });
+        
+            $("#box").dblclick(function(){
+                $(this).hide();
+            });
+        
+            $("#box").mouseenter(function(){
+                $(this).show();
+            });
+        
+            $("#btn").click(function(){
+                $(this).attr("disabled", true);
+                $(this).html("Button Disabled!");
+            });
+        });
+        </script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <br><br><br><br><br>
+    <button id="btn">Click me</button>
+</body>
+</html>

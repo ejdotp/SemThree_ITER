@@ -1,0 +1,101 @@
+<!--Question 7. Create a sign up form. Your users should be able to:
+(i) View the optimal layout for the site depending on their device's screen size
+(ii) See hover states for all interactive elements on the page
+(iii) Receive an error message when the form is submitted if:
+(a) Any input field is empty
+(b) The email address is not formatted correctly -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#signup-form').submit(function(event) {
+                event.preventDefault();
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var password = $('#password').val();
+                var confirmPassword = $('#confirm-password').val();
+
+                if (name === '' || email === '' || password === '' || confirmPassword === '') {
+                    alert('Please fill out all fields.');
+                    return;
+                }
+
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match.');
+                    return;
+                }
+
+                alert('Sign up successful!');
+            });
+        });
+    </script>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Sign Up</h1>
+		<form id="signup-form">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Your Name..." required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Your Email..." required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" placeholder="Password..." name="password" required>
+
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" placeholder="Confirm Password..." name="confirm-password" required>
+
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+</body>
+</html>
