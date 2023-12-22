@@ -1,4 +1,4 @@
-public class Queue_impl_arr {
+public class QueueArray {
     static class Queue {
         static int arr[];
         static int size;
