@@ -11,11 +11,11 @@ public class QueueArray {
 
         }
 
-        public static boolean isEmpty() {
+        boolean isEmpty() {
             return rear == -1;
         }
 
-        public static void enqueue(int data) {
+        void enqueue(int data) {
             if (rear == size - 1) {
                 System.out.println("Queue is full");
                 return;
@@ -25,7 +25,7 @@ public class QueueArray {
 
         }
 
-        public static int dequeue() {
+        int dequeue() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
                 return -1;
@@ -38,7 +38,7 @@ public class QueueArray {
             return front;
         }
 
-        public static int peek() {
+        int peek() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
                 return -1;
