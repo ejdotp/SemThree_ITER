@@ -13,4 +13,6 @@ Dog "HAS-A" tail.
     * Different objects, methods, variables; they all bind to one class to perform a task  
 1. Polymorphism:
     * poly -> more than two
-    + morphism -> quality/state/forms
+    + morphism -> quality/state/forms  
+1. Inheritance:  
+    - Copying and changing little bit to form a new.
