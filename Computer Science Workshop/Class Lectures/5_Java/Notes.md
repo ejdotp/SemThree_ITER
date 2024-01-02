@@ -33,6 +33,9 @@ Dog "HAS-A" tail.
     - 'Program' and 'program' are two different words for java but same for html.
 + Class Levels:  
     - Accessibility:  
-    ![Accessibility table](https://drive.google.com/file/d/1Rxr75pcqW6MXVIE18RR6wOZz-UeQpy3Z/view?usp=sharing)
-
+    |            |               |               |
+    |            |  Private      |  ↓            |
+    |More    ↑   |  Default      |  Less         |
+    |Restricted  |  Protected    |  Restricted   |
+    |            |  Public       |               |
 
