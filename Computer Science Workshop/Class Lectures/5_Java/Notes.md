@@ -7,7 +7,7 @@ Dog "IS-A" animal.
 Dog "HAS-A" tail.
 
 1. Abstraction:  
-    * Reveal - what you need to show  
+    - Reveal - what you need to show  
     + Hide - what you don't need to show  
 1. Encapsulation:
     * Different objects, methods, variables; they all bind to one class to perform a task  
