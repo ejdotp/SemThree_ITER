@@ -32,10 +32,10 @@ Dog "HAS-A" tail.
 + Dude is Case Sensitive  
     - 'Program' and 'program' are two different words for java but same for html.
 + Class Levels:  
-    - Accessibility:  
-    |            |               |               |  
-    |            |  Private      |  ↓            |  
-    |More    ↑   |  Default      |  Less         |  
-    |Restricted  |  Protected    |  Restricted   |  
-    |            |  Public       |               |  
-
+    - Accessibility: 
+<pre>
+                ↑               |  
+                |  Private      |  
+    More        |  Default      |  Less  
+    Restricted  |  Protected    |  Restricted  
+                |  Public       ↓  </pre>
