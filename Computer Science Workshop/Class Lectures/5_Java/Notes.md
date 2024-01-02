@@ -25,3 +25,7 @@ Dog "HAS-A" tail.
     - For any imports, import keyword must be used followed by the class full path. And these statements must appear between package declaration and class declaration.
     - There can be multiple class declarations but only one class can be classified as public. Hence, these import and package statements are applicable to all the packages and imports.
     - A file which contains the program with no public class can have any name that does not need to match any of the classes in the fil e. Only public class name must match with the file name and a file can have only one public class.
+1. Identifier:
+    - It must not start with a number.
+    - It should not have space between two words.
+         -Variables, objects, class name, function.
