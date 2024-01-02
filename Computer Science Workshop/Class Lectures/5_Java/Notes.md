@@ -18,9 +18,7 @@ Dog "HAS-A" tail.
     - Copying and changing little bit to form a new.
 1. Declaration Rules
     - Only one public class per source code file is permitted
-
     - Comments can appear anywhere, beginning or end. 
-
     - Name of the source code file must match the name of the public class and end with “.java”. For example, in our HelloWorldExample, we have HelloWorldExample as our public class and hence the file name must be  
         HelloWorldExample.java.
     - Although it is not mandatory to create separate packages, it is a good practice to create separate ones. In that case, package declaration must be the first line even before import statements.
