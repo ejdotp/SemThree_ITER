@@ -28,4 +28,4 @@ Dog "HAS-A" tail.
 1. Identifier:
     - It must not start with a number.
     - It should not have space between two words.
-         -Variables, objects, class name, function.
+         - Variables, objects, class name, function.
