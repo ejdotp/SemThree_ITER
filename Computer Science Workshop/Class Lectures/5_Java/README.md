@@ -1,11 +1,12 @@
 # Principles of OOPS in java
 
--> IS-A : when one object belongs to a particular class(inheritance)-> HAS-A
+-> IS-A : when one object belongs to a particular class(inheritance)  
+-> HAS-A
 
-> example:
-> Dog->Animal->Living Being(super class)
-> Dog "IS-A" animal.
-> Dog "HAS-A" tail.
+> example:  
+> Dog->Animal->Living Being(super class)  
+> Dog "IS-A" animal.  
+> Dog "HAS-A" tail.  
 
 + ### Abstraction:
 
