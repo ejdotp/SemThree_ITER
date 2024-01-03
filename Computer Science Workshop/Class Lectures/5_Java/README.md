@@ -77,12 +77,12 @@
 
 + ### Variables:
   - They are a container to store values.
-    + > int Var
+     > int Var
     + is a container that store integer values.
   - Types of variables in java are:
     - Primitives : byte , short , int , long , float , double , char, boolean
   - Declaration:
-    - >Vartype varname = value;
+     >Vartype varname = value;
 
 
     
