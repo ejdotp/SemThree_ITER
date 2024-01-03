@@ -61,6 +61,7 @@
 + ### Basic Syntax:
   - Every line of the code should be inside a class  
   - Class name should start with an upercase letter [not compulsory]
+  - Every Java program should have main method/function
     >Test.java
     - <pre>public class Test{
         public static void main(string[] args){      |

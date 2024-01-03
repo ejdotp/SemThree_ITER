@@ -14,5 +14,10 @@ public class test
         System.out.println(c);
         a = 17; //can be reassigned
         System.out.println(a);
+        
+        //String contanitation:
+        String g = "Sid";
+        String h = "lu";
+        System.out.println(g+h);
     }
 }
