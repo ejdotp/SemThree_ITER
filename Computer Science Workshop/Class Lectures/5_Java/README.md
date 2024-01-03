@@ -61,7 +61,7 @@
 + ### Basic Syntax:
   - Every line of the code should be inside a class  
   - Class name should start with an upercase letter [not compulsory]
-  - >Test.java
+    >Test.java
     - <pre>public class Test{
         public static void main(string[] args){      |
         --1--- -----2----- -3-- ------4------        |
