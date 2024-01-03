@@ -61,17 +61,19 @@
   - Every line of the code should be inside a class  
   - Class name should start with an upercase letter [not compulsory]
   - >Test.java
-  - <pre>public class Test{
-      public static void main(string[] args){      |
-      --1--- -----2----- -3-- ------4------        |
-        System.out.println("Hello World");         |5
-      }                                            |
-    }
-    
+    - <pre>public class Test{
+        public static void main(string[] args){      |
+        --1--- -----2----- -3-- ------4------        |
+          System.out.println("Hello World");         |5
+        }                                            |
+      }
+        
         1-> Access Modifier
         2-> Return Type
         3-> Function/Method
         4-> Parameters
         5-> Body of the code</pre>
+
+
     
   
