@@ -74,6 +74,15 @@
         4-> Parameters
         5-> Body of the code</pre>
 
++ ### Variables:
+  - They are a container to store values.
+    + > int Var
+    + is a container that store integer values.
+  - Types of variables in java are:
+    - Primitives : byte , short , int , long , float , double , char, boolean
+  - Declaration:
+    - >Vartype varname = value;
+
 
     
   

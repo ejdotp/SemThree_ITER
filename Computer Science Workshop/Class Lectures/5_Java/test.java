@@ -1,4 +1,4 @@
-public class Test
+public class test
 {
     public static void main(String[] args)
     {
@@ -7,5 +7,11 @@ public class Test
         System.out.println(3+7); //prints 10
         System.out.println(3*7); //prints 21
         System.out.println("3+7"); //prints 3+7
+        int a = 12; float b = 15.7f; String name = "Rabi"; double c = 155.013;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(name);
+        System.out.println(c);
+
     }
 }
