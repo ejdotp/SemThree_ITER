@@ -1,24 +1,31 @@
-public class StackLL{
-    static class Node {
+public class StackLL
+{
+    static class Node
+    {
         int data;
         Node next;
 
-        Node(int data) {
+        Node(int data)
+        {
             this.data = data;
             this.next = null;
         }
     }
 
-    static class StackBB {
+    static class Stack
+    {
         static Node head = null;
 
-        public static boolean isEmpty() {
+        public static boolean isEmpty()
+        {
             return head == null;
         }
 
-        public static void push(int data) {
+        public static void push(int data)
+        {
             Node newNode = new Node(data);
-            if (isEmpty()) {
+            if (isEmpty())
+            {
                 head = newNode;
                 return;
             }
@@ -26,8 +33,10 @@ public class StackLL{
             head = newNode;
         }
 
-        public static int pop() {
-            if (isEmpty()) {
+        public static int pop()
+        {
+            if (isEmpty())
+            {
                 return -1;
             }
             int top = head.data;
@@ -35,22 +44,25 @@ public class StackLL{
             return top;
         }
 
-        public static int top() {
-            if (isEmpty()) {
+        public static int top()
+        {
+            if (isEmpty())
+            {
                 return -1;
             }
             return head.data;
         }
     }
 
-    public static void main(String[] args) {
-        StackBB s = new StackBB();
-        s.push(1);
-        s.push(2);
-        s.push(3);
-        while (!s.isEmpty()) {
-            System.out.println(s.top());
-            s.pop();
+    public static void main(String[] args)
+    {
+        Stack.push(1);
+        Stack.push(2);
+        Stack.push(3);
+        while (!Stack.isEmpty())
+        {
+            System.out.println(Stack.top());
+            Stack.pop();
         }
     }
 }
