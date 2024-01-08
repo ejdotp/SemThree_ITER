@@ -87,48 +87,31 @@
 
 + ### Test.java:
 
-public class Test
-
-public static void main(String[] args) {
-
-String x="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-int y=x.length();
-
-String zx.toLowerCase();
-
-System.out.println(y);
-
-System.out.println(s);
-
-System.out.println(z.toUpperCase());
-
-String fname="Rahul";
-
-String Iname=" Mohanty";
-
-String Name-fname.concat (lname);
-
-System.out.println(Name);
-
-System.out.println("We are "Section44 of CSE");
-
-System.out.println("We are \Section44\ of CS2");
-
-System.out.println(c.indexOf("word"));
-
-Syatem.out.println(c.indexOf ("word")); String[] w("I", "Me", "Myself");
-
-String[] {" an", "here");
-
-int[] 1(10,20,21);
-
-System.out.println(w[0].concat(v[0])+" "+1[1]);
-
-for (String jiw)
-
-System.out.println());
-
-
+  - <pre>  public class Test
+      {  
+          public static void main(String[] args)
+          {  
+              String x="ABCDEFGHIJKLMNOPQRSTUVWXYZ";  
+              int y=x.length();  
+              String z=x.toLowerCase();  
+              System.out.println(y);  
+              System.out.println(z);  
+              System.out.println(z.toUpperCase());  
+              String fname="Rahul";  
+              String lname=" Mohanty";  
+              String Name=fname.concat(lname);  
+              System.out.println(Name);  
+              System.out.println("We are "Section44" of "CSE");  
+              System.out.println("We are \Section44\ of CSE");  
+              System.out.println(c.indexOf("word"));  
+              Syatem.out.println(c.indexOf("word"));  
+              String[] w={"I", "Me", "Myself"};  
+              String[] V={" an", "here"};  
+              int[] i={10,20,21};  
+              System.out.println(w[0].concat(v[0])+" "+i[1]);  
+              for (String j:w)  
+                  System.out.println(j);  
+          }  
+      }</pre>
     
   
