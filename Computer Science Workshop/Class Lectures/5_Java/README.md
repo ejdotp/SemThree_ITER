@@ -86,7 +86,6 @@
      >Vartype varname = value;
 
 + ### Test.java:
-
   - <pre>  public class Test
       {  
           public static void main(String[] args)
@@ -113,5 +112,23 @@
                   System.out.println(j);  
           }  
       }</pre>
+
++ ### Multi-Dimentional Array:
+  - An array can contain another arrays which makes it multidimensional.
+  - 2D Array: 
+    - <pre>public class MultiDimentionalArray
+      {
+        public static void main(String[] args)
+        {
+            int[][] numbers = {{1, 2, 3}, {4, 5, 6}};
+            System.out.println(numbers[1][2]);
+            int k = numbers[2][2];
+            System.out.println(k);
+            numbers[2][1] = 10;
+            System.out.println(numbers[2][1]);
+        }
+      }</pre>
     
+    - here, 'numbers.length' will give the row length and 'numbers[0].length' will give the column length.
+
   
