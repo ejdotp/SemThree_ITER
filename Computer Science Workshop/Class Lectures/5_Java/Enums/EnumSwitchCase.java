@@ -1,4 +1,3 @@
-package Enums;
 enum level
 {
     LOW, MEDIUM, HIGH
