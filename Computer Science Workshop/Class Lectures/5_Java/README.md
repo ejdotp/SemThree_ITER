@@ -132,4 +132,32 @@
     
     - here, 'numbers.length' will give the row length and 'numbers[0].length' will give the column length.
 
++ ### Enums:
+  - Special Class
+    + Represents/Declares constants variables  
+  - It is used to define a group of related enumeration constants.
+  - Syntax : enum Identifier{Constant}
+  - Example :
+    + <pre>enum level
+      {
+          LOW, MEDIUM, HIGH
+      }
+      public class EnumsClass
+      {
+          public static void main(String[] args)
+          {
+              level my_var1 = level.MEDIUM;
+              System.out.println("Value of my_var1: " + my_var1);
+              level my_var2 = level.LOW;
+              System.out.println("Value of my_var2: " + my_var2);
+              level my_var3 = level.HIGH;
+              System.out.println("Value of my_var3: " + my_var3);
+          }
+      }</pre>
+  - Enum in a Switch Statement:
+    + Enums are often used in switch statements to check for corresponding values.
+  - Loop Through an Enum:
+    + The enum type has a values() method, which returns an array of all enum constants. This method is useful when you want to loop through constants of an enum.
+  
+
   
