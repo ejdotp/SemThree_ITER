@@ -156,8 +156,54 @@
       }</pre>
   - Enum in a Switch Statement:
     + Enums are often used in switch statements to check for corresponding values.
+    + <pre>enum level
+      {
+          LOW, MEDIUM, HIGH
+      }
+      public class EnumSwitchCase
+      {
+          public static void main(String[] args)
+          {
+              level my_var1 = level.LOW;
+              switch(my_var1)
+              {
+                  case LOW:
+                      System.out.println("Low Level");
+                      break;
+                  case MEDIUM:
+                      System.out.println("Medium Level");
+                      break;
+                  case HIGH:
+                      System.out.println("High Level");
+              }
+          }
+      }</pre>
   - Loop Through an Enum:
     + The enum type has a values() method, which returns an array of all enum constants. This method is useful when you want to loop through constants of an enum.
+    + <pre>enum level
+      {
+          LOW, MEDIUM, HIGH, E_HIGH
+      }
+      public class EnumLoop
+      {
+          public static void main(String[] args) {
+              for(level myvar:level.values())
+              {
+                  System.out.println(myvar);
+              }
+          }
+      }</pre>
+  - Difference between Enums & Classes:
+    1. Enums are similar to classes.  
+    2. Enum constants are always <b>Public</b>,<b>Static</b>, and <b>Fixed</b>.  
+    3. An Enum can't be used to create objects.  
+  - Use of Enum:
+    + Enums are used when the values aren't going to change, like: 
+      - Days of a week
+      - Months
+      - Colors of things
+      - True Facts, etc.
+
   
 
   
