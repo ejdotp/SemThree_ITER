@@ -1,12 +1,11 @@
 # Principles of OOPS in java
 
--> IS-A : when one object belongs to a particular class(inheritance)  
--> HAS-A
+-> IS-A : when one object belongs to a particular class(inheritance)-> HAS-A
 
-> example:  
-> Dog->Animal->Living Being(super class)  
-> Dog "IS-A" animal.  
-> Dog "HAS-A" tail.  
+> example:
+> Dog->Animal->Living Being(super class)
+> Dog "IS-A" animal.
+> Dog "HAS-A" tail.
 
 + ### Abstraction:
 
@@ -59,33 +58,46 @@
                 |  Public       ↓  </pre>
 
 + ### Basic Syntax:
-  - Every line of the code should be inside a class  
+
+
+  - Every line of the code should be inside a class
   - Class name should start with an upercase letter [not compulsory]
   - Every Java program should have main method/function
-    >Test.java
+
+    > Test.java
+    >
+
     - <pre>public class Test{
         public static void main(string[] args){      |
         --1--- -----2----- -3-- ------4------        |
           System.out.println("Hello World");         |5
         }                                            |
       }
-        
+
         1-> Access Modifier
         2-> Return Type
         3-> Function/Method
         4-> Parameters
         5-> Body of the code</pre>
-
 + ### Variables:
+
+
   - They are a container to store values.
-     > int Var
+
+    > int Var
+    >
+
     + is a container that store integer values.
   - Types of variables in java are:
+
     - Primitives : byte , short , int , long , float , double , char, boolean
   - Declaration:
-     >Vartype varname = value;
 
+    > Vartype varname = value;
+    >
 + ### Test.java:
+
+
   - <pre>public class Test
     {
           public static void main(String[] args)
@@ -113,10 +125,11 @@
                   System.out.println(j);
           }
       }</pre>
-
 + ### Multi-Dimentional Array:
+
+
   - An array can contain another arrays which makes it multidimensional.
-  - 2D Array: 
+  - 2D Array:
     - <pre>public class MultiDimentionalArray
       {
         public static void main(String[] args)
@@ -129,12 +142,12 @@
             System.out.println(numbers[1][1]);
         }
       }</pre>
-    
     - here, 'numbers.length' will give the row length and 'numbers[0].length' will give the column length.
-
 + ### Enums:
+
+
   - Special Class
-    + Represents/Declares constants variables  
+    + Represents/Declares constants variables
   - It is used to define a group of related enumeration constants.
   - Syntax : enum Identifier{Constant}
   - Example :
@@ -194,18 +207,45 @@
           }
       }</pre>
   - Difference between Enums & Classes:
-    1. Enums are similar to classes.  
-    2. Enum constants are always <b>Public</b>,<b>Static</b>, and <b>Fixed</b>.  
-    3. An Enum can't be used to create objects.  
+    1. Enums are similar to classes.
+    2. Enum constants are always `<b>`Public `</b>`,`<b>`Static `</b>`, and `<b>`Fixed `</b>`.
+    3. An Enum can't be used to create objects.
   - Use of Enum:
-    + Enums are used when the values aren't going to change, like: 
+    + Enums are used when the values aren't going to change, like:
       - Days of a week
       - Months
       - Colors of things
       - True Facts, etc.
++ Wrapper Classes:
 
-+ Wrapper:
+  - Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
+  - Primitive Data Types:
 
-  
+    + Data types, that has already been defined.
+    + Examples: int, float, double, char, boolean.
+    + Declaration: int m = 15;
+  - The table below shows the primitive type and the equivalent wrapper class:  
+    +  | Primitive Data Type | Wrapper Class |
+       | ------------------- | ------------- |
+       | byte                | Byte          |
+       | short               | Short         |
+       | int                 | Integer       |
+       | long                | Long          |
+       | float               | Float         |
+       | double              | Double        |
+       | boolean             | Boolean       |
+       | char                | Character     |
+  - Creation of Wrapper Class:
 
-  
+    + <pre>public class Test
+      {
+          public static void main(String[] args)
+          {
+              Integer my_Int = 15;
+              Character my_char = 'x';
+              Double my_Double = 17.231;
+              System.out.println("Integer: " + my_Int);
+              System.out.println("Character: " + my_char);
+              System.out.println("Double: " + my_Double);
+          }
+      }
