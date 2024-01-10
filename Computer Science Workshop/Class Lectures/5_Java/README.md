@@ -216,7 +216,7 @@
       - Months
       - Colors of things
       - True Facts, etc.
-+ Wrapper Classes:
++ ### Wrapper Classes:
 
   - Wrapper classes provide a way to use primitive data types (int, boolean, etc..) as objects.
   - Primitive Data Types:
@@ -235,6 +235,7 @@
        | double              | Double        |
        | boolean             | Boolean       |
        | char                | Character     |
+
   - Creation of Wrapper Class:
 
     + <pre>public class Test
@@ -249,3 +250,49 @@
               System.out.println("Double: " + my_Double);
           }
       }
+
+  - Functions: 
+    + <pre>public class Functions
+      {
+          public static void main(String[] args)
+          {
+              Integer my_Int = 15;
+              System.out.println(my_Int.intValue());
+              String my_String = my_Int.toString();
+              System.out.println(my_String);
+              System.out.println("Length: "+my_String.length());
+          }
+      }
+  
+  - Autoboxing: 
+    + The process of converting primitive data types to wrapper class objects.
+  - Unboxing:
+    + The process of converting wrapper class objects to primitive data types
+     <pre>
+                      --> Wrapper Class -------
+                      |                       |
+           Autoboxing |                       | Unboxing
+                      |                       |
+                      -- Primitive Datatypes <-
+             * All done automatically by the compiler</pre>
+  - write a program to check for prime (Application of Wrapper Class)
+    <pre>public class isPrime
+    {
+        public static void main(String[] args)
+        {
+            int n = 29; //Input
+            boolean flag = false;
+            for (int i = 2; i <= n/2; i++)
+            {
+                if (n%i == 0)
+                {
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag)
+                System.out.println(n + " is a prime number.");
+            else
+                System.out.println(n + " is not a prime number.");
+        }
+    }</pre>
