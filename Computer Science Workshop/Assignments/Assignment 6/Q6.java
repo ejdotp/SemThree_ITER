@@ -1,4 +1,4 @@
-public class p6
+public class Q6
  {
     public static int divide(int x, int y) 
     {

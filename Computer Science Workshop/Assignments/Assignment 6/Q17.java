@@ -1,4 +1,4 @@
-public class p17 {
+public class Q17 {
 
     public static boolean isEven(int number) {
         return (number & 1) == 0;

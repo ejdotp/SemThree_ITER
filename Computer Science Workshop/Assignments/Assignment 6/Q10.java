@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class p10
+public class Q10
 {
     public static boolean isClose(float num1, float num2, float epsilon) 
     {

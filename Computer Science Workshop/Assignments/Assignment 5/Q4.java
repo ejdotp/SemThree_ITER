@@ -1,4 +1,4 @@
-public class p4 {
+public class Q4 {
 
     public static void main(String[] args) {
         boolean booleanValue1 = true;

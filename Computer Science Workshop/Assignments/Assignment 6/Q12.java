@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class p12 {
+public class Q12 {
 
     public static int combineDigits(int number1, int number2) {
         int firstTwoDigits = Math.abs(number1) / 100;

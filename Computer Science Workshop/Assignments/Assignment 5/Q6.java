@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-public class p7 {
+public class Q6 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a double as a string: ");
+        System.out.print("Enter a float as a string: ");
         String inputString = scanner.nextLine();
         try {
-            Double doubleValue = Double.valueOf(inputString);
+            Float floatValue = Float.valueOf(inputString);
             System.out.println("Original string: " + inputString);
-            System.out.println("Converted Double object: " + doubleValue);
+            System.out.println("Converted Float object: " + floatValue);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid double as a string.");
+            System.out.println("Invalid input. Please enter a valid float as a string.");
         }
     }
 }

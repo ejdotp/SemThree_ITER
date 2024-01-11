@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class p11
+public class Q11
 {
     public static int countEvenDigits(int number) 
     {

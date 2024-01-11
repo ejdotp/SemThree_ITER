@@ -1,4 +1,4 @@
-public class p7 {
+public class Q7 {
 
     public static long power(int x, int y) 
     {

@@ -1,4 +1,4 @@
-public class p8 
+public class Q8 
 {
 
     public static int reverse(int number) {

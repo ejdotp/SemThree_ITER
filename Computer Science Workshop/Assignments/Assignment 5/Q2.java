@@ -1,4 +1,4 @@
-public class p2 {
+public class Q2 {
 
     public static void main(String[] args) {
         float floatValue = 3.14f;

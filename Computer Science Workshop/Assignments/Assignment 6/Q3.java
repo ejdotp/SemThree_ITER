@@ -1,4 +1,4 @@
-public class p3 {
+public class Q3 {
 
     public static int swapBits(int number, int i, int j) 
     {

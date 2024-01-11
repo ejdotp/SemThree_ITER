@@ -1,4 +1,4 @@
-public class p15 {
+public class Q15 {
 
     public static boolean isPrime(int number) {
         if (number <= 1) {
