@@ -15,5 +15,8 @@
     + Autoboxing
     + Unboxing
 - Explain the concept of converting a base data type to an object type(Wrapping) using the valueOf() method.
+    + It is a static method that allows you to create an object of the respective wrapper class from a specified primitive value.
 - Explain the concept of converting object type to base type.
+    + In Java, converting an object of a derived class to its base class type is known as "upcasting." This involves treating an instance of a subclass as an instance of its superclass.
 - Explain the method used to do so.
+    + It's implicitly done when you assign an object of the derived class to a reference variable of the base class type. Upcasting is safe because a subclass object inherently contains all the characteristics of its superclass.
