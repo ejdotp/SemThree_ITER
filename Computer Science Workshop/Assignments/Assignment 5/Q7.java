@@ -1,17 +1,9 @@
-import java.util.Scanner;
-
-public class Q7 {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a double as a string: ");
-        String inputString = scanner.nextLine();
-        try {
-            Double doubleValue = Double.valueOf(inputString);
-            System.out.println("Original string: " + inputString);
-            System.out.println("Converted Double object: " + doubleValue);
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid double as a string.");
-        }
+public class Q7
+{
+    public static void main(String[] args)
+    {
+        Double x = Double.valueOf("1.36");
+        System.out.println("Original string: " + "1.36");
+        System.out.println("Converted Double object: " + x);
     }
 }

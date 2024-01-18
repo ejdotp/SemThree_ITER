@@ -1,28 +1,17 @@
-import java.util.Scanner;
+public class Q9
+{
+    public static void main(String[] args)
+    {
+        Integer i = Integer.valueOf("27");
+        System.out.println("Converted Integer object: " + i);
 
-public class Q9 {
+        Float f = Float.valueOf("1.37f");
+        System.out.println("Converted Float object: " + f);
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Double d = Double.valueOf("1.56d");
+        System.out.println("Converted Double object: " + d);
 
-        System.out.print("Enter an integer as a string: ");
-        String intString = scanner.nextLine();
-        Integer integerValue = Integer.valueOf(intString);
-        System.out.println("Converted Integer object: " + integerValue);
-
-        System.out.print("Enter a float as a string: ");
-        String floatString = scanner.nextLine();
-        Float floatValue = Float.valueOf(floatString);
-        System.out.println("Converted Float object: " + floatValue);
-
-        System.out.print("Enter a double as a string: ");
-        String doubleString = scanner.nextLine();
-        Double doubleValue = Double.valueOf(doubleString);
-        System.out.println("Converted Double object: " + doubleValue);
-
-        System.out.print("Enter a boolean as a string (true or false): ");
-        String booleanString = scanner.nextLine();
-        Boolean booleanValue = Boolean.valueOf(booleanString);
-        System.out.println("Converted Boolean object: " + booleanValue);
+        Boolean b = Boolean.valueOf("false");
+        System.out.println("Converted Boolean object: " + b);
     }
 }

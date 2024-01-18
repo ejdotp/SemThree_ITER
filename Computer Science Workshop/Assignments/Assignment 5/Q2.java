@@ -1,9 +1,10 @@
-public class Q2 {
-
-    public static void main(String[] args) {
-        float floatValue = 3.14f;
-        Float floatObject = new Float(floatValue);
-        System.out.println("Original float value: " + floatValue);
-        System.out.println("Converted Float object: " + floatObject);
+public class Q2
+{
+    public static void main(String[] args)
+    {
+        float x = 3.14f;
+        Float y = Float.valueOf(x);
+        System.out.println("Original: " + x);
+        System.out.println("Converted: " + y);
     }
 }
