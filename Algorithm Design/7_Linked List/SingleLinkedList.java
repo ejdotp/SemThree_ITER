@@ -73,7 +73,9 @@ public class SingleLinkedList
 		if(head==null)
 			System.out.println("Linked list is empty");
 		if(head.next==tail)
-			head = null;
+		{
+			tail = head;
+			head.next = null;
 		Node temp = head;
 		while(temp.next.next != null)
 			temp=temp.next;
