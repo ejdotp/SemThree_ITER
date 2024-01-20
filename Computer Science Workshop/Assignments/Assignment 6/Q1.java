@@ -5,7 +5,8 @@ public class Q1
     static int countSetBits(int n)
     {
         int count = 0;
-        while (n > 0) {
+        while (n > 0)
+        {
             count += n & 1;    // i,s binary is added with 1's binary
             n >>= 1;
         }

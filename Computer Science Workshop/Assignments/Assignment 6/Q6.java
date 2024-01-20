@@ -2,10 +2,9 @@ public class Q6
  {
     public static int divide(int x, int y) 
     {
-        if (y == 0) 
-        {
+        if (y == 0)
             throw new ArithmeticException("Cannot divide by zero");
-        }
+        
         int quotient = 0;
         while (x >= y) 
         {

@@ -1,27 +1,27 @@
 import java.util.Scanner;
 public class Q11
 {
-    public static int countEvenDigits(int number) 
+    public static int countEven(int num) 
     {
-        number = Math.abs(number);
+        num = Math.abs(num);
         int count = 0;
-        while (number > 0) 
+        while (num > 0) 
         {
-            int digit = number % 10;
-            if (digit % 2 == 0) 
+            int d = num % 10;
+            if ((d & 1) == 0) 
             {
                 count++;
             }
-            number /= 10;
+            num /= 10;
         }
         return count;
     }
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter an integer number: ");
-        int inputNumber = scanner.nextInt();
-        int evenDigitCount = countEvenDigits(inputNumber);
-        System.out.println("Number of even digits: " + evenDigitCount);
+        int num = sc.nextInt();
+        int count = countEven(num);
+        System.out.println("Number of even digits: " + count);
     }
 }

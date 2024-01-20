@@ -1,28 +1,25 @@
 import java.util.Scanner;
 
-public class Q13 {
+public class Q13
+{
+    public static void main(String[] args)
+    {
+        int n = 155566;
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        n = Math.abs(n);
 
-        System.out.print("Enter an integer number: ");
-        int inputNumber = scanner.nextInt();
+        int[] freq = new int[10];
 
-        inputNumber = Math.abs(inputNumber);
-
-        int[] digitFrequencies = new int[10];
-
-        while (inputNumber > 0) {
-            int digit = inputNumber % 10;
-            digitFrequencies[digit]++;
-            inputNumber /= 10;
+        while (n > 0)
+        {
+            int d = n % 10;
+            freq[d]++;
+            n /= 10;
         }
 
         System.out.println("Digit frequencies:");
-        for (int i = 0; i < 10; i++) {
-            if (digitFrequencies[i] > 0) {
-                System.out.println("Digit " + i + ": " + digitFrequencies[i] + " times");
-            }
-        }
+        for (int i = 0; i < 10; i++)
+            if (freq[i] > 0)
+                System.out.println("Digit " + i + ": " + freq[i] + " times");
     }
 }

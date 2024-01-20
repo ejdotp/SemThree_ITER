@@ -1,25 +1,23 @@
 public class Q4
 {
 
-    public static long reverseBits(long inputWord) 
+    public static int reverseBits(int n) 
     {
-        long reversedWord = 0;
+        int rev = 0;
 
-        for (int i = 0; i < 64; i++) 
+        for (int i = 0; i < 4; i++) 
         {
-            long bit = (inputWord >> i) & 1;
-            reversedWord |= (bit << (63 - i));
+            rev = rev << 1;
+            rev = rev | (n&1);
+            n = n>>>1;
         }
 
-        return reversedWord;
+        return rev;
     }
 
     public static void main(String[] args) 
     {
-        long inputWord = 0b1010101010101010L;
-
-        System.out.println("Original word: " + Long.toBinaryString(inputWord));
-        long result = reverseBits(inputWord);
-        System.out.println("Reversed word: " + Long.toBinaryString(result));
+        int n = 5;
+        int rev = reverseBits(n);
     }
 }
