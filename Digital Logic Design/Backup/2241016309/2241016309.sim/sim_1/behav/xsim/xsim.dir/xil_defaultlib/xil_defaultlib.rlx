@@ -1,0 +1,26 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/2241016309/2241016309.srcs/sim_1/new/BCD9sCompliment_tb.vhd,1703321606,vhdl,,,,bcd9scompliment_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/BinaryGrayConverter_tb.vhd,1703319696,vhdl,,,,binarygrayconverter_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/DecoderFA_tb.vhd,1705136014,vhdl,,,,decoderfa_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/Lab8A_tb.vhd,1704528186,vhdl,,,,lab8a_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/Lab8B_tb.vhd,1704529775,vhdl,,,,lab8b_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/Lab8C_tb.vhd,1704531545,vhdl,,,,lab8c_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/PriorityEncoder4Bit_tb.vhd,1705135274,vhdl,,,,priorityencoder4bit_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/TwoBitComparator_tb.vhd,1703323291,vhdl,,,,twobitcomparator_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/fulladder_tb.vhd,1701509192,vhdl,,,,fulladder_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/halfadder_tb.vhd,1701506892,vhdl,,,,halfadder_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sim_1/new/mux2X1_tb.vhd,1705133791,vhdl,,,,mux2x1_tb,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/BCD9sCompliment.vhd,1703320726,vhdl,,,,bcd9scompliment,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/BinaryGrayConverter.vhd,1703318111,vhdl,,,,binarygrayconverter,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/DecoderFA.vhd,1705135775,vhdl,,,,decoderfa,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/Lab8A.vhd,1704527522,vhdl,,,,lab8a,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/Lab8B.vhd,1704529443,vhdl,,,,lab8b,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/Lab8C.vhd,1704531349,vhdl,,,,lab8c,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/PriorityEncoder4Bit.vhd,1705134532,vhdl,,,,priorityencoder4bit,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/TwoBitComparator.vhd,1703322737,vhdl,,,,twobitcomparator,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/fulladder.vhd,1701508326,vhdl,,,,fulladder,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/halfadder.vhd,1701506281,vhdl,,,,halfadder,,,,,,,,
+E:/2241016309/2241016309.srcs/sources_1/new/mux2X1.vhd,1705133389,vhdl,,,,mux2x1,,,,,,,,
