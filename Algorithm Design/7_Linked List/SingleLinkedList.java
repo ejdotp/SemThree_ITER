@@ -8,125 +8,151 @@ public class SingleLinkedList
 		Node next;
 		Node(int data)
 		{
-			this.data=data;
-			this.next=null;
+			this.data = data;
+			this.next = null;
 		}
 	}
 
 	public static Node head;
 	public static Node tail;
+	public static int size;
 
 	public static void addfirst(int data)
 	{
 		Node newNode = new Node(data);
-		if(head==null)
+		if(head == null)
 		{
 			head = tail = newNode;
+			size++;
 			return;
 		}
 		newNode.next = head;
 		head = newNode;
+		size++;
 	}
 
 	public static void addlast(int data)
 	{
 		Node newNode = new Node(data);
-		if(head==null)
+		if(head == null)
 		{
 			head=tail=newNode;
+			size++;
 			return;
 		}
 		tail.next=newNode;
 		tail=newNode;
+		size++;
 	}
 
 	public static void addany(int data, int key)
 	{
-		if(key==0)
+		if(key == 0)
 		{
 			addfirst(data);
 			return;
 		}
 		Node newNode = new Node(data);
-		Node temp=head;
-		int i=0;
-		while(i<key-1)
+		Node temp = head;
+		int i = 0;
+		while(i < key - 1)
 		{
-			temp=temp.next;
+			temp = temp.next;
 			i++;
 		}
 		newNode.next = temp.next;
 		temp.next = newNode;
+		size++;
 	}
 
 	public static void delfirst()
 	{
-		if(head==null)
+		if(head == null)
 			System.out.println("Linked list is empty");
-		if(head.next==tail)
+
+		if(head.next == tail)
+		{
 			head = null;
+			size--;
+			return;
+		}
+
 		head = head.next;
+		size--;
 	}
 
 	public static void dellast()
 	{
-		if(head==null)
+		if(head == null)
 			System.out.println("Linked list is empty");
-		if(head.next==tail)
+
+		if(size == 1)
 		{
-			head.next = null;
+			head = tail = null;
+            size=0;
 			return;
 		}
+
 		Node temp = head;
 		while(temp.next.next != null)
-			temp=temp.next;
+			temp = temp.next;
 		tail = temp;
 		temp.next = null;
+		size--;
 	}
 
 	public static void delany(int key)
 	{
-		if(head==null)
+		if(head == null)
 			System.out.println("Linked list is empty");
-		if(head.next==tail)
-			head = null;
-		Node temp=head;
-		int i=0;
+
+		if(size == 1)
+		{
+			head = tail = null;
+            size=0;
+			return;
+		}
+
+		Node temp = head;
+		int i = 0;
 		while(i<key-1)
 		{
-			temp=temp.next;
+			temp = temp.next;
 			i++;
 		}
 		temp.next = temp.next.next;
+		size--;
 	}
 
 	public static void print()
 	{
-		if(head==null)
+		if(head == null)
 			System.out.println("Linked list is empty");
+
 		Node temp = head;
 		while(temp != null)
 		{
 			System.out.print(temp.data+"->");
-			temp=temp.next;
+			temp = temp.next;
 		}
 		System.out.println("null");
 	}
 
 	public static void reverse()
 	{
-		if(head==null)
+		if(head == null)
 			System.out.println("Linked list is empty");
-		Node curr=head, prev=null, temp;
-		while(curr.next!=null)
+
+		Node curr = head, prev = null, temp;
+		while(curr.next != null)
 		{
-			temp=curr.next;
-			curr.next=prev;
-			prev=curr;
-			curr=temp;
+			temp = curr.next;
+			curr.next = prev;
+			prev = curr;
+			curr = temp;
 		}
-		curr.next=prev;
-		head=curr;
+		curr.next = prev;
+		head = curr;
 	}
 
 	public static void main(String[] args)
